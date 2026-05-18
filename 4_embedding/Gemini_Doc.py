@@ -1,3 +1,7 @@
+# thier is an official issue on Gemini-embedding-2,
+# and it's on the way to be fixed, so we can not use it for now
+
+
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from dotenv import load_dotenv
 
