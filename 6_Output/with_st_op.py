@@ -10,6 +10,9 @@ load_dotenv()  # Load environment variables from .env file
 # that information will be used for Linedin ID creation of that deceloper
 
 
+
+# here I can also Use Pydantic if I want to do some validation on the data,
+# but for now I am just using TypedDict for simplicity
 class Linkedin_data(TypedDict):
     Name : Annotated[str, 'enter the name of the developer']
     mail_id : Annotated[str, 'Enter the mail ID of developer']
@@ -17,6 +20,9 @@ class Linkedin_data(TypedDict):
     tech_stack : Annotated[List[str],'Enter the techstack of this developer']
     projects : Annotated[Dict[str,str], 'enter the project name along with its small description']
     summary : Annotated[str,'enter the summary']
+
+
+
 
 model = ChatGoogleGenerativeAI(
     model = 'gemini-3.5-flash',
