@@ -5,5 +5,7 @@ loader = PyPDFDirectoryLoader(
     recursive=True  # Search subdirectories
 )
 
-loaded_docs = loader.load()
+
+loaded_docs = loader.lazy_load()
 print(len(loaded_docs))
+print(loaded_docs[0].page_content[:500])  # Print the first 500 characters of the first document
