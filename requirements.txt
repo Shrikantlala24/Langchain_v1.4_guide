@@ -1,5 +1,7 @@
 langchain
 langchain-core
+langchain-community
+langchain-docling
 langchain-openai
 langchain-anthropic
 langchain-google-genai
@@ -14,3 +16,6 @@ langgraph-sdk
 langsmith
 pydantic
 streamlit
+
+opendataloader-pdf
+langchain-opendataloader-pdf
