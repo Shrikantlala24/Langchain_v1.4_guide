@@ -19,3 +19,6 @@ streamlit
 
 opendataloader-pdf
 langchain-opendataloader-pdf
+
+playwright
+# playwright install ; a separate command needed to install the browsers
