@@ -4,3 +4,10 @@ __pycache__/
 
 /secret
 /9_1_Directory_loader\books
+
+chroma_db
+
+paper.pdf
+
+.vscode
+opencode.json
