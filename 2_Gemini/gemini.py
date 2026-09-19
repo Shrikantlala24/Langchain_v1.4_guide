@@ -4,11 +4,11 @@ from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
 
 chat = ChatGoogleGenerativeAI(
-    model='gemini-2.5-flash',
-    temperature=1
+    model="gemini-3.5-flash-lite",
+    temperature=1,
     # max_tokens=1000
 )
 
-response = chat.invoke('what is Deep learning')
+response = chat.invoke("what is Deep learning")
 
 print(response.content)
